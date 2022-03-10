@@ -1,6 +1,20 @@
 import pytest
 from merge import *
 from merge_sort import *
+from quicksort import *
+
+def test_quick_sort_non_integer_list():
+	''' test merge of b_list without integers'''
+	with pytest.raises(TypeError):
+		merge_sort([1, 3, 5, [1, 2], 7, 9, 2, 4, 'B', 8, 10])
+
+def test_quick_sort_negative():
+	''' test merge of negative integers'''
+	assert merge_sort([-1, 1, 3, 5, 7, 9, -2, 2, 4, 6, 8, 10]) == [-2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def test_cuick_sort_single():
+	''' test merge of a single element'''
+	assert merge_sort([10]) == [10]
 
 def test_merge_b_non_integer_list():
 	''' test merge of b_list without integers'''
