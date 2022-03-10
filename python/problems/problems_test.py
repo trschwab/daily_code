@@ -1,6 +1,7 @@
 import pytest
 from fibonacci import *
 from steps import *
+from min_cost_stairs import *
 
 def test_fib():
 	''' test fibonacci'''
@@ -13,3 +14,8 @@ def test_steps():
 	''' testing steps '''
 	assert steps(5) == 8
 	assert steps(13) == 377
+
+def test_min_cost_stairs():
+	''' testing steps '''
+	assert min_cost_stairs([10, 15, 20]) == 15
+	assert min_cost_stairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) == 6
