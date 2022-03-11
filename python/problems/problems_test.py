@@ -6,7 +6,7 @@ from palindrome_integers import *
 
 def test_palindrome_integers():
 	''' test palindrom integers'''
-	assert palindrome_integers(1) == False
+	assert palindrome_integers(1) == True
 	assert palindrome_integers(10) == False
 	assert palindrome_integers(-1) == False
 	assert palindrome_integers(-121) == False

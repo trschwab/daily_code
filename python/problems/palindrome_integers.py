@@ -1,7 +1,7 @@
 def palindrome_integers(x):
 	if x == 0:
 		return True
-	if x <=10 or x % 10 == 0 :
+	if x < 0 or x % 10 == 0 :
 		return False
 
 	reverse = 0
