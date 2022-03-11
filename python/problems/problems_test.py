@@ -2,6 +2,17 @@ import pytest
 from fibonacci import *
 from steps import *
 from min_cost_stairs import *
+from palindrome_integers import *
+
+def test_palindrome_integers():
+	''' test palindrom integers'''
+	assert palindrome_integers(1) == False
+	assert palindrome_integers(10) == False
+	assert palindrome_integers(-1) == False
+	assert palindrome_integers(-121) == False
+	assert palindrome_integers(121) == True
+	assert palindrome_integers(123454321) == True
+	assert palindrome_integers(1298558921) == True
 
 def test_fib():
 	''' test fibonacci'''
