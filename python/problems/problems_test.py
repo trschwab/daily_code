@@ -3,6 +3,17 @@ from fibonacci import *
 from steps import *
 from min_cost_stairs import *
 from palindrome_integers import *
+from roman_to_integer import *
+
+def test_roman_to_integers():
+	''' test roman to integers '''
+	assert roman_to_integer('III') == 3
+	assert roman_to_integer('CM') == 900
+	assert roman_to_integer('I') == 1
+	assert roman_to_integer('IV') == 4
+	assert roman_to_integer('MCMXCIV') == 1994
+	assert roman_to_integer('LVIII') == 58
+	
 
 def test_palindrome_integers():
 	''' test palindrom integers'''
