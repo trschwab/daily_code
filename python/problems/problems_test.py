@@ -5,6 +5,24 @@ from min_cost_stairs import *
 from palindrome_integers import *
 from roman_to_integer import *
 from two_sum import two_sum
+from add_two_numbers import *
+
+def test_add_two_numbers():
+	''' test add two numbers '''
+	a = sll_node(2, sll_node(4, sll_node(3)))
+	b = sll_node(5, sll_node(6, sll_node(4)))
+	c = sll_node(7, sll_node(0, sll_node(8)))
+	assert compare_sll(add_two_numbers(a, b), c)
+
+def compare_sll(a, b):
+	while a and b:
+		print(a.val)
+		print(b.val)
+		if a.val != b.val:
+			return False
+		a = a.next_node
+		b = b.next_node
+	return True
 
 def test_two_sum():
 	''' test two sum '''
