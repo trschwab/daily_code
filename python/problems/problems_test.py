@@ -10,6 +10,12 @@ from two_sum_IV import *
 from range_sum_of_bst import *
 from fizz_buzz import *
 from valid_parentheses import *
+from longest_common_prefix import *
+
+def test_longestCommonPrefix():
+	''' test longestCommonPrefix'''
+	assert longestCommonPrefix(["flower","flow","flight"]) == "fl"
+	assert longestCommonPrefix(["dog","racecar","car"]) == ""
 
 def test_isValidParentheses():
 	''' test isValidParentheses '''
