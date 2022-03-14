@@ -9,6 +9,15 @@ from add_two_numbers import *
 from two_sum_IV import *
 from range_sum_of_bst import *
 from fizz_buzz import *
+from valid_parentheses import *
+
+def test_isValidParentheses():
+	''' test isValidParentheses '''
+	assert isValidParentheses("()") == True
+	assert isValidParentheses("()[]{}") == True
+	assert isValidParentheses("(]") == False
+	assert isValidParentheses("({})") == True
+	assert isValidParentheses("]") == False
 
 def test_fizzBuzz():
 	''' test fizzBuzz'''
