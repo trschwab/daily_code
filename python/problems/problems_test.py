@@ -8,6 +8,13 @@ from two_sum import two_sum
 from add_two_numbers import *
 from two_sum_IV import *
 from range_sum_of_bst import *
+from fizz_buzz import *
+
+def test_fizzBuzz():
+	''' test fizzBuzz'''
+	assert fizzBuzz(3) == ["1","2","Fizz"]
+	assert fizzBuzz(5) == ["1","2","Fizz","4","Buzz"]
+	assert fizzBuzz(15) == ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 
 def test_range_sum_of_bst():
 	''' test range_sum_of_bst '''
