@@ -7,11 +7,20 @@ from roman_to_integer import *
 from two_sum import two_sum
 from add_two_numbers import *
 from two_sum_IV import *
+from range_sum_of_bst import *
+
+def test_range_sum_of_bst():
+	''' test range_sum_of_bst '''
+	low = 7
+	high = 15
+	a = TreeNode(10, TreeNode(5, TreeNode(3), TreeNode(7)), TreeNode(15, None, TreeNode(18)))
+	b = Solution_range_sum_of_bst()
+	assert b.rangeSumBST(a, low, high) == 32
 
 def test_two_sum_iv():
 	''' test two sum IV'''
 	a = TreeNode(5, TreeNode(3, TreeNode(2), TreeNode(4)), TreeNode(6, None, TreeNode(7)))
-	b = Solution()
+	b = Solution_two_sum_IV()
 	assert b.findTarget(a, 5) == True
 
 def test_add_two_numbers():

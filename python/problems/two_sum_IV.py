@@ -5,7 +5,7 @@ class TreeNode(object):
          self.left = left
          self.right = right
 
-class Solution(object):
+class Solution_two_sum_IV(object):
 	def findTarget(self, root, k):
 		'''
 		:type root: TreeNode
