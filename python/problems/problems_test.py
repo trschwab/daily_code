@@ -6,6 +6,13 @@ from palindrome_integers import *
 from roman_to_integer import *
 from two_sum import two_sum
 from add_two_numbers import *
+from two_sum_IV import *
+
+def test_two_sum_iv():
+	''' test two sum IV'''
+	a = TreeNode(5, TreeNode(3, TreeNode(2), TreeNode(4)), TreeNode(6, None, TreeNode(7)))
+	b = Solution()
+	assert b.findTarget(a, 5) == True
 
 def test_add_two_numbers():
 	''' test add two numbers '''
