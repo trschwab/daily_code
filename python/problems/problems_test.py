@@ -11,6 +11,13 @@ from range_sum_of_bst import *
 from fizz_buzz import *
 from valid_parentheses import *
 from longest_common_prefix import *
+from longest_substring_without_repeating_characters import *
+
+def test_lengthOfLongestSubstring():
+	''' test lengthOfLongestSubstring'''
+	assert lengthOfLongestSubstring("abcabcbb") == 3
+	assert lengthOfLongestSubstring("bbbbb") == 1
+	assert lengthOfLongestSubstring("pwwkew") == 3
 
 def test_longestCommonPrefix():
 	''' test longestCommonPrefix'''
