@@ -14,6 +14,15 @@ from longest_common_prefix import *
 from longest_substring_without_repeating_characters import *
 from merge_two_sorted_lists import *
 from implement_strstr import *
+from merge_k_sorted_lists import *
+
+def test_mergeKLists():
+	''' test mergeKLists '''
+	a = ListNode_mergeKLists(1, ListNode_mergeKLists(4, ListNode_mergeKLists(5)))
+	b = ListNode_mergeKLists(1, ListNode_mergeKLists(3, ListNode_mergeKLists(4)))
+	c = ListNode_mergeKLists(2, ListNode_mergeKLists(6))
+	d = ListNode_mergeKLists(1, ListNode_mergeKLists(1, ListNode_mergeKLists(2, ListNode_mergeKLists(3, ListNode_mergeKLists(4, ListNode_mergeKLists(4, ListNode_mergeKLists(5, ListNode_mergeKLists(6))))))))
+	assert mergeKLists([a, b, c]).get_arr() == d.get_arr()
 
 def test_strStr():
 	''' test strStr '''
