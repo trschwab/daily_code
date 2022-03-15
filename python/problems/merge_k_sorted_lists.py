@@ -13,6 +13,16 @@ class ListNode_mergeKLists(object):
 		return arr
 
 def mergeKLists(lists):
+	if len(lists) < 1:
+		return ListNode_mergeKLists("",)
+	if len(lists) == 1:
+		return lists[0]
+	mid = len(lists) // 2
+	x = merge(mergeKLists(lists[:mid]), mergeKLists(lists[mid:]))
+	return x
+        
+
+def mergeKLists_inefficient(lists):
 	if len(lists) == 0:
 		return ListNode_mergeKLists("",)
 	if len(lists) == 1:
