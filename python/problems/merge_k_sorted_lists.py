@@ -14,7 +14,7 @@ class ListNode_mergeKLists(object):
 
 def mergeKLists(lists):
 	if len(lists) == 0:
-		return ListNode("",)
+		return ListNode_mergeKLists("",)
 	if len(lists) == 1:
 		return lists[0]
 	i = 0
