@@ -13,6 +13,15 @@ from valid_parentheses import *
 from longest_common_prefix import *
 from longest_substring_without_repeating_characters import *
 from merge_two_sorted_lists import *
+from implement_strstr import *
+
+def test_strStr():
+	''' test strStr '''
+	assert strStr("hello","ll") == 2
+	assert strStr("aaaaa", "bba") == -1
+	assert strStr("", "") == 0
+	assert strStr("a", "a") == 0
+	assert strStr("abc", "c") == 2
 
 def test_mergeTwoLists():
 	''' test of mergeTwoLists '''
