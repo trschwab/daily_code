@@ -12,6 +12,14 @@ from fizz_buzz import *
 from valid_parentheses import *
 from longest_common_prefix import *
 from longest_substring_without_repeating_characters import *
+from merge_two_sorted_lists import *
+
+def test_mergeTwoLists():
+	''' test of mergeTwoLists '''
+	l1 = ListNode_merge_two_sorted_lists(1, ListNode_merge_two_sorted_lists(2, ListNode_merge_two_sorted_lists(4)))
+	l2 = ListNode_merge_two_sorted_lists(1, ListNode_merge_two_sorted_lists(3, ListNode_merge_two_sorted_lists(4)))
+	l3 = ListNode_merge_two_sorted_lists(1, ListNode_merge_two_sorted_lists(1, ListNode_merge_two_sorted_lists(2, ListNode_merge_two_sorted_lists(3, ListNode_merge_two_sorted_lists(4, ListNode_merge_two_sorted_lists(4))))))
+	assert mergeTwoLists(l1, l2).get_arr() == l3.get_arr()
 
 def test_lengthOfLongestSubstring():
 	''' test lengthOfLongestSubstring'''
