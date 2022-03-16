@@ -15,6 +15,18 @@ from longest_substring_without_repeating_characters import *
 from merge_two_sorted_lists import *
 from implement_strstr import *
 from merge_k_sorted_lists import *
+from sqrtx import *
+
+def test_mySqrt():
+	''' test mySqrt '''
+	assert mySqrt(4) == 2
+	assert mySqrt(8) == 2
+	assert mySqrt(25) == 5
+	assert mySqrt(36) == 6
+	assert mySqrt(0) == 0
+	assert mySqrt(1) == 1
+	assert mySqrt(2) == 1
+	assert mySqrt(3) == 1
 
 def test_mergeKLists():
 	''' test mergeKLists '''
