@@ -16,6 +16,14 @@ from merge_two_sorted_lists import *
 from implement_strstr import *
 from merge_k_sorted_lists import *
 from sqrtx import *
+from asteroid_collision import *
+
+def test_asteroidCollision():
+	''' test asteroid collision '''
+	assert asteroidCollision([5,10,-5]) == [5, 10]
+	assert asteroidCollision([8,-8]) == []
+	assert asteroidCollision([10,2,-5]) == [10]
+	assert asteroidCollision([-2,-1,1,2]) == [-2, -1, 1, 2]
 
 def test_mySqrt():
 	''' test mySqrt '''
