@@ -1,3 +1,7 @@
+# https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+# In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
+# The earliest known reference to the sieve is in Nicomachus of Gerasa's Introduction to Arithmetic, an early 2nd cent. CE book, which describes it and attributes it to Eratosthenes of Cyrene, a 3rd cent. BCE Greek mathematician.
+
 
 def sieve(n):
 	''' calculates prime numbers up to n '''
