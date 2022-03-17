@@ -17,6 +17,12 @@ from implement_strstr import *
 from merge_k_sorted_lists import *
 from sqrtx import *
 from asteroid_collision import *
+from destroying_asteroids import *
+
+def test_asteroidsDestroyed():
+	''' test asteroidsDestroyed '''
+	assert asteroidsDestroyed(10, [3,9,19,5,21]) == True
+	assert asteroidsDestroyed(5, [4,9,23,4]) == False
 
 def test_asteroidCollision():
 	''' test asteroid collision '''
