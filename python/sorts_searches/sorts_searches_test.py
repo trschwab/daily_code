@@ -2,6 +2,18 @@ import pytest
 from merge import *
 from merge_sort import *
 from quicksort import *
+from binary_search import *
+
+def test_binary_search_recursive():
+	''' test of a binary search recursive '''
+	a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+	assert binary_search_recursive(a, 0, len(a), 5) == 5
+	assert binary_search_recursive(a, 0, len(a), 0) == 0
+	assert binary_search_recursive(a, 0, len(a), 9) == 9
+	assert binary_search_recursive(a, 0, len(a), 1) == 1
+	assert binary_search_recursive(a, 0, len(a), 8) == 8
+	assert binary_search_recursive(a, 0, len(a), 10) == -1
+
 
 def test_quick_sort_non_integer_list():
 	''' test merge of b_list without integers'''
