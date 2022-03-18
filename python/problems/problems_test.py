@@ -20,6 +20,12 @@ from asteroid_collision import *
 from destroying_asteroids import *
 from climbing_stairs import *
 from valid_palindrome import *
+from intersection_of_two_linked_lists import *
+
+def test_getIntersectionNode():
+	''' test getIntersectionNode '''
+	a = [4,1,8,4,5]
+	b = [5,6,1,8,4,5]
 
 def test_isPalindrome():
 	''' test isPalindrome'''
