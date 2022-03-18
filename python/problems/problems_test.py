@@ -19,6 +19,13 @@ from sqrtx import *
 from asteroid_collision import *
 from destroying_asteroids import *
 from climbing_stairs import *
+from valid_palindrome import *
+
+def test_isPalindrome():
+	''' test isPalindrome'''
+	assert isPalindrome("A man, a plan, a canal: Panama") == True
+	assert isPalindrome("race a car") == False
+	assert isPalindrome(" ") == True
 
 def test_climbingStairs():
 	''' test climbingStairs '''
