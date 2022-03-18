@@ -18,6 +18,14 @@ from merge_k_sorted_lists import *
 from sqrtx import *
 from asteroid_collision import *
 from destroying_asteroids import *
+from climbing_stairs import *
+
+def test_climbingStairs():
+	''' test climbingStairs '''
+	assert climbStairs(2) == 2
+	assert climbStairs(3) == 3
+	assert climbStairs(4) == 5
+	assert climbStairs(5) == 8
 
 def test_asteroidsDestroyed():
 	''' test asteroidsDestroyed '''
