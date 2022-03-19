@@ -21,6 +21,14 @@ from destroying_asteroids import *
 from climbing_stairs import *
 from valid_palindrome import *
 from intersection_of_two_linked_lists import *
+from remove_duplicates_from_sorted_array import *
+
+def test_removeDuplicates():
+	''' test removeDuplicates '''
+	a = [1, 1, 2]
+	b = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+	assert a[:removeDuplicates(a)] == [1, 2]
+	assert b[:removeDuplicates(b)] == [0, 1, 2, 3, 4]
 
 def test_getIntersectionNode():
 	''' test getIntersectionNode '''
