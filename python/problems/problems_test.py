@@ -22,6 +22,14 @@ from climbing_stairs import *
 from valid_palindrome import *
 from intersection_of_two_linked_lists import *
 from remove_duplicates_from_sorted_array import *
+from first_unique_character_in_a_string import *
+
+
+def test_firstUniqChar_inefficient():
+	''' test inefficient first uniq char '''
+	assert firstUniqChar_inefficient("leetcode") == 0
+	assert firstUniqChar_inefficient("loveleetcode") == 2
+	assert firstUniqChar_inefficient("aabb") == -1
 
 def test_removeDuplicates():
 	''' test removeDuplicates '''
