@@ -1,3 +1,18 @@
+def firstUniqChar(s):
+	# s is going to be an ascii character..
+	# we can track the frequency in a hashmap
+	# populating will take O(N) time.
+	# Then we read the original string. First char with value of 1 is the solution
+	
+	# 128 characters in ascii
+	hashmap = [0] * 128
+	for i in range(len(s)):
+		hashmap[ord(s[i])] += 1
+	for i in range(len(s)):
+		if hashmap[ord(s[i])] == 1:
+			return i
+	return -1
+
 def firstUniqChar_inefficient(s):
 	dic = {}
 	seen = []

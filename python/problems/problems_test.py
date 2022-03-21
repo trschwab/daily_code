@@ -25,6 +25,12 @@ from remove_duplicates_from_sorted_array import *
 from first_unique_character_in_a_string import *
 
 
+def test_firstUniqChar():
+	''' test first uniq char '''
+	assert firstUniqChar("leetcode") == 0
+	assert firstUniqChar("loveleetcode") == 2
+	assert firstUniqChar("aabb") == -1
+
 def test_firstUniqChar_inefficient():
 	''' test inefficient first uniq char '''
 	assert firstUniqChar_inefficient("leetcode") == 0
