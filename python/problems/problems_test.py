@@ -23,7 +23,13 @@ from valid_palindrome import *
 from intersection_of_two_linked_lists import *
 from remove_duplicates_from_sorted_array import *
 from first_unique_character_in_a_string import *
+from single_number import *
 
+def test_singleNumber():
+	''' test singleNumber '''
+	assert singleNumber([2,2,1]) == 1
+	assert singleNumber([4,1,2,1,2]) == 4
+	assert singleNumber([1]) == 1
 
 def test_firstUniqChar():
 	''' test first uniq char '''
