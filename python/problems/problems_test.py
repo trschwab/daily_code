@@ -24,6 +24,12 @@ from intersection_of_two_linked_lists import *
 from remove_duplicates_from_sorted_array import *
 from first_unique_character_in_a_string import *
 from single_number import *
+from valid_anagram import *
+
+def test_isAnagram():
+	''' test isAnagram '''
+	assert isAnagram("anagram","nagaram") == True
+	assert isAnagram("rat","car") == False
 
 def test_singleNumber():
 	''' test singleNumber '''
