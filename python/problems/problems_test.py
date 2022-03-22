@@ -1,6 +1,12 @@
 import pytest
 from problems_test_imports import *
 
+def test_plusOne():
+	''' test plusOne '''
+	assert plusOne([1,2,3]) == [1, 2, 4]
+	assert plusOne([4,3,2,1]) == [4, 3, 2, 2]
+	assert plusOne([9]) == [1, 0]
+
 def test_containsDuplicate():
 	''' test containsDuplicate '''
 	assert containsDuplicate([1,2,3,1]) == True
