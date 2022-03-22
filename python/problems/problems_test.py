@@ -1,6 +1,12 @@
 import pytest
 from problems_test_imports import *
 
+def test_titleToNumber():
+	''' test titleToNumber '''
+	assert titleToNumber('A') == 1
+	assert titleToNumber('AB') == 28
+	assert titleToNumber('ZY') == 701
+	
 def test_isHappy():
 	''' test isHappy '''
 	assert isHappy(19) == True
