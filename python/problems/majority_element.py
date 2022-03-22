@@ -4,5 +4,8 @@ def majorityElement(nums):
 		if nums[i] not in dic.keys():
 			dic[nums[i]] = 1
 		else:
-			dic[nums[i]] += 1
+			if (dic[nums[i]] + 1) > len(nums) // 2:
+				return nums[i]
+			else:
+				dic[nums[i]] += 1
 	return max(dic, key=dic.get)
