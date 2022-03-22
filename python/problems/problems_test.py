@@ -1,6 +1,11 @@
 import pytest
 from problems_test_imports import *
 
+def test_majorityElement():
+	''' test majorityElement '''
+	assert majorityElement([3, 2, 3]) == 3
+	assert majorityElement([2, 2, 1, 1, 1, 2, 2]) == 2
+
 def test_titleToNumber():
 	''' test titleToNumber '''
 	assert titleToNumber('A') == 1
