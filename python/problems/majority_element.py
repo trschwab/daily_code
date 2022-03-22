@@ -5,4 +5,4 @@ def majorityElement(nums):
 			dic[nums[i]] = 1
 		else:
 			dic[nums[i]] += 1
-	return max(dic)
+	return max(dic, key=dic.get)
