@@ -2,6 +2,12 @@ import pytest
 from problems_test_imports import *
 
 
+def test_missingNumber():
+	''' test missingNumber '''
+	assert missingNumber([3, 0, 1]) == 2
+	assert missingNumber([0, 1]) == 2
+	assert missingNumber([9,6,4,2,3,5,7,0,1]) == 8
+
 def test_moveZeroes_inefficient():
 	''' test moveZeroes_inefficient '''
 	assert moveZeroes_inefficient([0,1,0,3,12]) == [1, 3, 12, 0, 0]
