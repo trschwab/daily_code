@@ -25,6 +25,14 @@ from remove_duplicates_from_sorted_array import *
 from first_unique_character_in_a_string import *
 from single_number import *
 from valid_anagram import *
+from number_of_1_bits import *
+
+def test_hammingWeight_inefficient():
+	''' test hammingWeight_inefficient '''
+	assert hammingWeight_inefficient("00000000000000000000000000001011") == 3
+	assert hammingWeight_inefficient("00000000000000000000000010000000") == 1
+	assert hammingWeight_inefficient("11111111111111111111111111111101") == 31
+
 
 def test_isAnagram():
 	''' test isAnagram '''
