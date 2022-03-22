@@ -2,6 +2,11 @@ import pytest
 from problems_test_imports import *
 
 
+def test_moveZeroes_inefficient():
+	''' test moveZeroes_inefficient '''
+	assert moveZeroes_inefficient([0,1,0,3,12]) == [1, 3, 12, 0, 0]
+	assert moveZeroes_inefficient([0]) == [0]
+
 def test_isPowerOfThree_mod():
 	''' test isPowerOfThree_mod '''
 	assert isPowerOfThree_mod(27) == True

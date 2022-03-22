@@ -1,3 +1,4 @@
+from move_zeroes import *
 from fibonacci import *
 from steps import *
 from min_cost_stairs import *
