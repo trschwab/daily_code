@@ -1,6 +1,12 @@
 import pytest
 from problems_test_imports import *
 
+def test_isPowerOfThree_inefficient():
+	''' test isPowerOfThree_inefficient '''
+	assert isPowerOfThree_inefficient(27) == True
+	assert isPowerOfThree_inefficient(0) == False
+	assert isPowerOfThree_inefficient(9) == True
+
 def test_reverseString():
 	''' test reverseString '''
 	assert reverseString(["h","e","l","l","o"]) == ["o","l","l","e","h"]

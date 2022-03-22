@@ -26,5 +26,5 @@ from single_number import *
 from valid_anagram import *
 from number_of_1_bits import *
 from reverse_string import *
-
+from power_of_three import *
 
