@@ -26,6 +26,12 @@ from first_unique_character_in_a_string import *
 from single_number import *
 from valid_anagram import *
 from number_of_1_bits import *
+from reverse_string import *
+
+def test_reverseString():
+	''' test reverseString '''
+	assert reverseString(["h","e","l","l","o"]) == ["o","l","l","e","h"]
+	assert reverseString(["H","a","n","n","a","h"]) == ["h","a","n","n","a","H"]
 
 def test_hammingWeight_inefficient():
 	''' test hammingWeight_inefficient '''
