@@ -1,6 +1,11 @@
 import pytest
 from problems_test_imports import *
 
+def test_containsDuplicate():
+	''' test containsDuplicate '''
+	assert containsDuplicate([1,2,3,1]) == True
+	assert containsDuplicate([1,2,3,4]) == False
+	assert containsDuplicate([1,1,1,3,3,4,3,2,4,2]) == True
 
 def test_missingNumber():
 	''' test missingNumber '''
