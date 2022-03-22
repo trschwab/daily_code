@@ -1,6 +1,11 @@
 import pytest
 from problems_test_imports import *
 
+def test_isHappy():
+	''' test isHappy '''
+	assert isHappy(19) == True
+	assert isHappy(2) == False
+
 def test_plusOne():
 	''' test plusOne '''
 	assert plusOne([1,2,3]) == [1, 2, 4]
