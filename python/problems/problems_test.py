@@ -1,6 +1,11 @@
 import pytest
 from problems_test_imports import *
 
+def test_generate():
+	''' test generate '''
+	assert generate(5) == [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+	assert generate(1) == [[1]]
+
 def test_majorityElement():
 	''' test majorityElement '''
 	assert majorityElement([3, 2, 3]) == 3

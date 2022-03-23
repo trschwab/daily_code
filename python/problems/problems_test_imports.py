@@ -1,3 +1,4 @@
+from pascals_triangle import *
 from majority_element import *
 from excel_sheet_column_number import *
 from happy_number import *
