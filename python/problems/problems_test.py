@@ -1,6 +1,11 @@
 import pytest
 from problems_test_imports import *
 
+def longestPalindrome(s):
+	''' test longestPalindrome '''
+	assert longestPalindrome("babad") == "aba"
+	assert longestPalindrome("cbbd") == "bb"
+
 def test_generate():
 	''' test generate '''
 	assert generate(5) == [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
