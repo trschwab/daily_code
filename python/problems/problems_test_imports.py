@@ -1,3 +1,4 @@
+from reverse_integer import *
 from longest_palindromic_substring import *
 from pascals_triangle import *
 from majority_element import *

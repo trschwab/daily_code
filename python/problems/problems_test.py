@@ -1,9 +1,15 @@
 import pytest
 from problems_test_imports import *
 
-def longestPalindrome(s):
+def test_reverse():
+	''' test reverse '''
+	assert reverse(123) == 321
+	assert reverse(-123) == -321
+	assert reverse(120) == 21
+
+def test_longestPalindrome():
 	''' test longestPalindrome '''
-	assert longestPalindrome("babad") == "aba"
+	assert longestPalindrome("babad") in ["aba", "bab"]
 	assert longestPalindrome("cbbd") == "bb"
 
 def test_generate():
