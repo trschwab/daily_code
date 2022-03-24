@@ -1,6 +1,12 @@
 import pytest
 from problems_test_imports import *
 
+def test_groupAnagrams():
+	''' test group anagrams '''
+	a = groupAnagrams(["eat","tea","tan","ate","nat","bat"])
+	for i in range(len(a)):
+		assert a[i] in [["eat","tea","ate"],["tan","nat"],["bat"]]
+
 def test_reverse():
 	''' test reverse '''
 	assert reverse(123) == 321
