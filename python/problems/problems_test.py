@@ -1,6 +1,11 @@
 import pytest
 from problems_test_imports import *
 
+def test_maxArea():
+	''' test maxArea '''
+	assert maxArea([1,8,6,2,5,4,8,3,7]) == 49
+	assert maxArea([1, 1]) == 1
+
 def test_groupAnagrams():
 	''' test group anagrams '''
 	a = groupAnagrams(["eat","tea","tan","ate","nat","bat"])
